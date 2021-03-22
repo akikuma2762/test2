@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <!-- 10. 請參考文件測試底下標籤，並試著舉例使用情境 -->
+    <!--    a. <select> 和 <datalist> -->
+    <!--    b. <optgroup> 和 <option> -->
+        <p>datalist----可輸入,並選取表單下列出現之選項</p>
+        <label>請問你使用什麼瀏覽器:
+            <input list="browsers" name="myBrowser"></label>
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Internet Explorer">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+            <u></u>
+            <p>select---option的容器</p>
+            <div class="custom-select" style="width:500px;">
+                <select style="width: 1000px;">
+                  <option value="0">請選擇:</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+              </div>
+              <p>optgroup---建立群組</p>
+              <form action="/action_page.php">
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+                  <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+              </form>
+</body>
+</html>

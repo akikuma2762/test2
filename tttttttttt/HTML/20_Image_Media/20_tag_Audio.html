@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- 影音 -->
+    <!-- http://www.w3schools.com/tags/ -->
+
+
+    <!-- 10. <video> 加入影片檔案-->
+<video width="300" height="300" controls autoplay muted > <source src="video/sayhi.mp4" type="video/mp4" > </video>
+    <!-- autoplay muted 可自動撥放 autoplay不支援 -->
+    <!-- 多重<source>確保不同瀏覽器不支援時有預備方案 -->
+
+
+
+    <!-- 20. 透過 <iframe> 連結至youtube -->
+
+
+    <!-- 關於 autoplay 屬性 -->
+    <!-- https://developers.google.com/web/updates/2017/09/autoplay-policy-changes -->
+    <iframe width="560" height="315"  src="https://www.youtube.com/embed/nNEXNNdMpSQ?autoplay=1&mute=1" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+        <!-- ?autoplay=1&mute=1 youtube來源最後加上此方法,自動撥放 -->
+
+</body>
+
+</html>
